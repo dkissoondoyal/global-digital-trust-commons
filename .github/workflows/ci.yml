@@ -1,0 +1,22 @@
+name: GDTC v0.1 checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify prototype parity and password-gate code
+        run: python3 scripts/check_source_sync.py
+      - name: Run JavaScript behaviour tests
+        run: node --test tests/demo.test.mjs
+      - name: PHP syntax
+        run: php -l wordpress/adtc-secure-pilot/adtc-secure-pilot.php
