@@ -1,0 +1,31 @@
+{
+  "project": "Global Digital Trust Commons (GDTC)",
+  "version": "0.1.0",
+  "date": "2026-10-30",
+  "files": {
+    ".gitattributes": "59d2b1e0793a2fe37c03baf76e3cf20881bbc140883e9cbcfba742f39bb4fe16",
+    ".github/ISSUE_TEMPLATE/bug_report.md": "41e7c7c274809d2e0840c64af2cef2a9d3c4e891ba017bf4c163e0edfb6078d2",
+    ".github/workflows/ci.yml": "c17ca637b389f1426a7bb92e33abf9f7d2db74ef9124ddfee54f216a8abdde55",
+    ".gitignore": "b8a0c8c703fd6da2be732cac0431b54edbf1f25b5baa6b1aeb216494944ae9f1",
+    "CHANGELOG.md": "6a606b9216a9d26dd375742cd270e2517d764c70415f34f9ee20c19699ebd0d0",
+    "CODE_OF_CONDUCT.md": "70fe88625a28eab582e83e67611d0cd908a9fbde503d7aa2f9d0b5160ac1200b",
+    "CONTRIBUTING.md": "7309af249af286e30fb73fd49f09f9e1cc7e503b7c803b9c5400f729385b7827",
+    "GOVERNANCE.md": "5e5d05964473fae2fed8fcd8f7c636a6ddde95705b525170c972f529ea20b3eb",
+    "LICENSE": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+    "README.md": "1ebcb47d97169a73dae19f3034f4a64ee580b913efb7b547f582c6890caed13e",
+    "SECURITY.md": "09c2ca1f73d9f9b4dedda1e2be3afd046e2830edc4779d4ece36a6e32fa1c66d",
+    "demo/index.html": "622fbbe1d5b32fd77a14cea9684d3a9b81c7d89cc17eb8e1313e4704acb075a1",
+    "docs/ARCHITECTURE.md": "2a7981b1faf05088f722944124395e21da7efb89137567dfb4bbc617c54190c0",
+    "docs/PRIVACY.md": "3a07ec12af82ae6d7444aec43b9955abbfce0b2122e7b8ab5868d5f4dff96dff",
+    "docs/PUBLICATION.md": "07f729cabba96dd780af06fa6642246405a82b9c6bc0db9ede4b5f8981e6e763",
+    "docs/ROADMAP.md": "4b8ae3873f7f9079b8512ceeb8e0147e347a0bc9e16c297f7b541bbf51514c6e",
+    "docs/THREAT_MODEL.md": "a2aa162a64091b6722d0e7fa04e330c4ca9e553f7395bff25b4c49a64f1fee33",
+    "docs/WORDPRESS.md": "cba38439c6810019f248177098fbe2ff12a90f31b0ef6b051d072ca9ccd422b2",
+    "docs/index.html": "622fbbe1d5b32fd77a14cea9684d3a9b81c7d89cc17eb8e1313e4704acb075a1",
+    "scripts/check_source_sync.py": "92ff3d7028055108916e15ef1884b86ddd6d2988c86405f4b7750edcc8817238",
+    "scripts/package_wp_plugin.py": "10861b49e2df369d88e6f6ebccf8032bb2a038104914e70568c82be8e16e5d7b",
+    "tests/demo.test.mjs": "00621363ac91705353c47ee11241a860182b4810275306e942ce4a3ce798e666",
+    "wordpress/adtc-secure-pilot/README.txt": "a55f00eebf9dd1a7f2a3c768c4dbc64f9e701d69f95e07a19a99b4cfcef2847f",
+    "wordpress/adtc-secure-pilot/adtc-secure-pilot.php": "b456b2454229ed41390b020b06cd8bf5f698c0ce3797512b24bffdc0dd5a08a2"
+  }
+}
