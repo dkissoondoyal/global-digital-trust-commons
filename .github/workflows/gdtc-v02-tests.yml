@@ -1,0 +1,43 @@
+name: GDTC v0.2 experimental verification
+on:
+  pull_request:
+    paths:
+      - 'prototype/remediation/**'
+      - 'scripts/assess_http_headers.py'
+      - 'tests/test_header_assessment.py'
+      - 'tests/test_integration.mjs'
+      - '.github/workflows/gdtc-v02-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Python assessor tests
+        run: python -m unittest discover -s tests -p 'test_header_assessment.py' -v
+      - name: Node integration tests
+        run: node --test tests/test_integration.mjs
+      - name: End-to-end synthetic evidence JSON
+        run: |
+          python scripts/assess_http_headers.py examples/synthetic-response-headers.txt --output /tmp/gdtc-report.json
+          python - <<'PY'
+          import json
+          with open('/tmp/gdtc-report.json', encoding='utf-8') as f:
+              report=json.load(f)
+          assert report['schema_version']=='0.2-experimental'
+          assert {x['control_id']:x['status'] for x in report['findings']} == {
+              'hsts':'not_observed',
+              'csp':'not_observed',
+              'nosniff':'observed_review_configuration'
+          }
+          print('Synthetic evidence JSON assertions passed')
+          PY
