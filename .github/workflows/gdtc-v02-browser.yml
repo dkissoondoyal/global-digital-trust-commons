@@ -1,0 +1,30 @@
+name: GDTC v0.2 Chromium browser integration
+on:
+  pull_request:
+    paths:
+      - 'prototype/remediation/**'
+      - 'scripts/assess_http_headers.py'
+      - 'examples/synthetic-response-headers.txt'
+      - 'tests/test_browser_integration.mjs'
+      - '.github/workflows/gdtc-v02-browser.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  chromium:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Playwright and Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Run real-browser integration test
+        run: node --test tests/test_browser_integration.mjs
