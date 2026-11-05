@@ -138,7 +138,7 @@ function adtc_pilot_protected_content( $content ) {
         . '<p style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#287680">Invitation-only experimental pilot · Projet pilote sur invitation</p>'
         . '<h2 id="adtc-heading">African Digital Trust Commons</h2>'
         . '<p>This is a browser-only demonstration. Use <strong>fictional data only</strong>. No passwords, domain secrets, account permissions, or real organisational configurations should be entered.</p>'
-        . '<iframe title="African Digital Trust Commons controlled pilot demonstration" srcdoc="' . esc_attr( $demo ) . '" sandbox="allow-scripts allow-downloads" referrerpolicy="no-referrer" loading="eager" style="display:block;width:100%;height:1250px;border:1px solid #cddfe1;border-radius:12px;background:#edf4f5;margin:20px 0"></iframe>'
+        . '<iframe title="African Digital Trust Commons controlled pilot demonstration" srcdoc="' . esc_attr( $demo ) . '" sandbox="allow-scripts allow-downloads allow-modals" referrerpolicy="no-referrer" loading="eager" style="display:block;width:100%;height:1250px;border:1px solid #cddfe1;border-radius:12px;background:#edf4f5;margin:20px 0"></iframe>'
         . '<p style="color:#60717d;font-size:13px">The tool does not scan a website or access accounts and its results are not an independent security audit. Results are not submitted to the IGF Mauritius server by this tool. Site traffic may still be recorded by the web host.</p>'
         . '</section>';
 }
