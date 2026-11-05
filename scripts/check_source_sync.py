@@ -14,4 +14,5 @@ assert DEMO == m.group(1).strip(), 'WordPress embedded demo differs from standal
 assert "post_password_required( $page )" in PLUGIN, 'WordPress password check missing'
 assert "'publish' !== $page->post_status" in PLUGIN, 'WordPress page publication gate missing'
 assert "! (string) $page->post_password" in PLUGIN, 'WordPress password fail-closed check missing'
+assert 'sandbox="allow-scripts allow-downloads allow-modals"' in PLUGIN, 'WordPress pilot iframe must permit browser printing while retaining isolation'
 print('PASS: source-sync and WordPress password-gate static checks')
