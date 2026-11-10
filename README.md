@@ -8,6 +8,16 @@ The initiative originates in Mauritius. Its first working demonstration is the *
 
 > **Not a security audit or a security product.** This demonstration does not scan domains, inspect mailboxes, connect to accounts, verify settings, or establish compliance. It generates observations entirely from fictional answers entered by a user. **Do not enter real credentials, sensitive configurations, client information, or personal data.**
 
+## November 2026 internal pilot checkpoint
+
+**Public source release remains v0.1.0 (synthetic-only).** Separately, an invitation-controlled IGF Mauritius GDTC pilot has developed an optional browser-side Nmap XML evidence reader and local Windows/macOS desktop companions. These **private internal QA builds are not the same as the source published in this repository**, and must not be represented as a publicly released open-source v0.4.3 package until version-matched source and build instructions are published.
+
+The maintainer reports successful internal functional tests on both Windows and macOS: app launch, pairing to the approved portal, an explicitly authorised localhost scan of six fixed TCP ports, browser analysis and local JSON/PDF export. On Mac, the app's Developer ID signature, stapled notarization and Gatekeeper acceptance were verified. The Windows test build remains unsigned. An additional Mac export test confirmed redaction of host/IP data when the optional inclusion setting was off.
+
+**Not yet complete:** independent security review, clean-machine external replication, Windows publisher signing, distribution readiness and version-matched public companion source. No unsupported claims of certification, external NGO adoption or Mozilla/ICANN endorsement are made.
+
+See [November 2026 internal acceptance checkpoint](docs/INTERNAL_ACCEPTANCE_2026-11-10.md), the [roadmap](docs/ROADMAP.md), [security policy](SECURITY.md) and [threat model](docs/THREAT_MODEL.md). Pilot accounts, downloads, consent details and raw scan evidence are not part of this public source repository.
+
 ## Try the demonstration
 
 - Open [`demo/index.html`](demo/index.html) locally in a modern browser. No installation, backend, account or network access is necessary.
