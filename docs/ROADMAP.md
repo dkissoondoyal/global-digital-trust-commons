@@ -9,6 +9,20 @@
 - [ ] Obtain independent security feedback and initial written user-study consent.
 - [ ] Collect signed/explicit authorisations and actual pilot feedback where offered.
 
+## Checkpoint: November 10, 2026 — internal QA, not public release
+
+- [x] Windows internal QA: companion launch, approved localhost pairing/scan and local evidence report outputs (maintainer-reported).
+- [x] macOS internal QA: companion launch, approved localhost scan, JSON/PDF redaction; Developer ID signature, notarization and Gatekeeper verified on test Mac.
+- [x] Invitation-managed volunteer portal and restricted internal download workflow established.
+- [x] Publish a public non-sensitive internal acceptance summary (see [checkpoint](INTERNAL_ACCEPTANCE_2026-11-10.md)).
+- [ ] Independently review authentication, download authorisation, localhost service, browser-origin restrictions, scan consent and privacy assertions.
+- [ ] Test fresh Windows/macOS installations and refusal/negative-path behavior.
+- [ ] Publish complete version-matched companion/portal source, dependencies, reproducible build instructions and licensing notices.
+- [ ] Sign the Windows release candidate, verify distribution integrity and repeat clean-machine checks.
+- [ ] Prepare and validate bilingual onboarding, accessibility and external pilot consent before opening registration.
+
+These tasks are **staged pilot preparation**, not a claim that GDTC has completed its research program, passed a security audit, or been adopted by partner NGOs.
+
 ## Proposed phases (not funded commitments)
 
 **2026–early 2027:** Refine technical documentation and threat model, recruit consenting reviewers, correct reported bugs, and ensure accessibility.
