@@ -19,9 +19,16 @@
 - [ ] Test fresh Windows/macOS installations and refusal/negative-path behavior.
 - [ ] Publish complete version-matched companion/portal source, dependencies, reproducible build instructions and licensing notices.
 - [ ] Sign the Windows release candidate, verify distribution integrity and repeat clean-machine checks.
-- [ ] Prepare and validate bilingual onboarding, accessibility and external pilot consent before opening registration.
+- [x] Enable individually reviewed volunteer registration requests and provide bilingual onboarding guidance; approval remains manual.
+- [ ] Validate accessibility, independent security review and external desktop pilot consent before granting broader desktop access.
 
 These tasks are **staged pilot preparation**, not a claim that GDTC has completed its research program, passed a security audit, or been adopted by partner NGOs.
+
+## ADTC and GDTC programme roles
+
+- **GDTC:** global commons, shared software, common security and governance framework.
+- **ADTC:** the Africa-focused pilot and regional co-design programme using the GDTC common codebase.
+- See [ADTC Africa pilot charter](ADTC_AFRICA_PILOT.md). No separate regional code fork is planned at this stage.
 
 ## Proposed phases (not funded commitments)
 
