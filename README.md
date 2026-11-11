@@ -8,6 +8,14 @@ The initiative originates in Mauritius. Its first working demonstration is the *
 
 > **Not a security audit or a security product.** This demonstration does not scan domains, inspect mailboxes, connect to accounts, verify settings, or establish compliance. It generates observations entirely from fictional answers entered by a user. **Do not enter real credentials, sensitive configurations, client information, or personal data.**
 
+## How ADTC and GDTC relate
+
+**GDTC (Global Digital Trust Commons)** is the shared worldwide open-source technology and prospective community-governance framework. **ADTC (African Digital Trust Commons)** is its Africa-focused pilot and community co-design programme, coordinated initially from Mauritius. ADTC evaluates how GDTC tools can serve African civil-society organisations; it is not a separate corporate organisation, independent security certification or forked source code.
+
+**GDTC develops the commons; ADTC tests, adapts and helps shape its usefulness in the African context.** Current volunteer registration and browser-only evaluation are part of the African pilot; the Windows/macOS companions remain separately controlled internal QA candidates, not automatic entitlements for registrants. External and non-African contributors may also express interest.
+
+Read the [ADTC Africa pilot charter and participation guide](docs/ADTC_AFRICA_PILOT.md). This distinction preserves the original ADTC identity of the v0.1 synthetic demonstration while keeping a single shared repository.
+
 ## November 2026 internal pilot checkpoint
 
 **Public source release remains v0.1.0 (synthetic-only).** Separately, an invitation-controlled IGF Mauritius GDTC pilot has developed an optional browser-side Nmap XML evidence reader and local Windows/macOS desktop companions. These **private internal QA builds are not the same as the source published in this repository**, and must not be represented as a publicly released open-source v0.4.3 package until version-matched source and build instructions are published.
